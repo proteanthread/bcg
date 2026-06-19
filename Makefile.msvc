@@ -1,0 +1,329 @@
+CC = cl
+CFLAGS = /nologo /W3 /MD /D_CRT_SECURE_NO_WARNINGS /TC
+SRCDIR = SOURCE
+BINDIR = bin_msvc
+
+TARGETS = $(BINDIR)\23matches.exe $(BINDIR)\3dplot.exe $(BINDIR)\aceyducey.exe $(BINDIR)\amazing.exe $(BINDIR)\animal.exe $(BINDIR)\awari.exe $(BINDIR)\bagels.exe $(BINDIR)\banner.exe $(BINDIR)\basketball.exe $(BINDIR)\batnum.exe $(BINDIR)\battle.exe $(BINDIR)\blackjack.exe $(BINDIR)\bombardment.exe $(BINDIR)\bombsaway.exe $(BINDIR)\bounce.exe $(BINDIR)\bowling.exe $(BINDIR)\boxing.exe $(BINDIR)\bug.exe $(BINDIR)\bullfight.exe $(BINDIR)\bullseye.exe $(BINDIR)\bunny.exe $(BINDIR)\buzzword.exe $(BINDIR)\calendar.exe $(BINDIR)\change.exe $(BINDIR)\checkers.exe $(BINDIR)\chemist.exe $(BINDIR)\chief.exe $(BINDIR)\chomp.exe $(BINDIR)\civilwar.exe $(BINDIR)\combat.exe $(BINDIR)\craps.exe $(BINDIR)\cube.exe $(BINDIR)\depthcharge.exe $(BINDIR)\diamond.exe $(BINDIR)\dice.exe $(BINDIR)\digits.exe $(BINDIR)\evenwins.exe $(BINDIR)\flipflop.exe $(BINDIR)\football.exe $(BINDIR)\ftball.exe $(BINDIR)\furtrader.exe $(BINDIR)\gameofevenwins.exe $(BINDIR)\golf.exe $(BINDIR)\gomoko.exe $(BINDIR)\guess.exe $(BINDIR)\gunner.exe $(BINDIR)\hammurabi.exe $(BINDIR)\hangman.exe $(BINDIR)\hello.exe $(BINDIR)\hexapawn.exe $(BINDIR)\hi-lo.exe $(BINDIR)\highiq.exe $(BINDIR)\hockey.exe $(BINDIR)\horserace.exe $(BINDIR)\hurkle.exe $(BINDIR)\kinema.exe $(BINDIR)\king.exe $(BINDIR)\lem.exe $(BINDIR)\letter.exe $(BINDIR)\life.exe $(BINDIR)\lifefortwo.exe $(BINDIR)\litquiz.exe $(BINDIR)\love.exe $(BINDIR)\lunar.exe $(BINDIR)\mastermind.exe $(BINDIR)\mathdice.exe $(BINDIR)\mine.exe $(BINDIR)\mugwump.exe $(BINDIR)\name.exe $(BINDIR)\nicomachus.exe $(BINDIR)\nim.exe $(BINDIR)\number.exe $(BINDIR)\onecheck.exe $(BINDIR)\orbit.exe $(BINDIR)\pizza.exe $(BINDIR)\poetry.exe $(BINDIR)\poker.exe $(BINDIR)\qubit.exe $(BINDIR)\queen.exe $(BINDIR)\reverse.exe $(BINDIR)\rocket.exe $(BINDIR)\rockscissors.exe $(BINDIR)\roulette.exe $(BINDIR)\russianroulette.exe $(BINDIR)\salvo.exe $(BINDIR)\sinewave.exe $(BINDIR)\slalom.exe $(BINDIR)\slots.exe $(BINDIR)\splat.exe $(BINDIR)\stars.exe $(BINDIR)\stockmarket.exe $(BINDIR)\suite.exe $(BINDIR)\superstartrek.exe $(BINDIR)\superstartrekins.exe $(BINDIR)\synonym.exe $(BINDIR)\target.exe $(BINDIR)\test.exe $(BINDIR)\tictactoe1.exe $(BINDIR)\tictactoe2.exe $(BINDIR)\tower.exe $(BINDIR)\train.exe $(BINDIR)\trap.exe $(BINDIR)\war.exe $(BINDIR)\weekday.exe $(BINDIR)\word.exe
+
+all: $(BINDIR) $(TARGETS)
+
+$(BINDIR):
+	if not exist $(BINDIR) mkdir $(BINDIR)
+
+$(BINDIR)\23matches.exe: $(SRCDIR)\23matches.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\23matches.c
+
+$(BINDIR)\3dplot.exe: $(SRCDIR)\3dplot.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\3dplot.c
+
+$(BINDIR)\aceyducey.exe: $(SRCDIR)\aceyducey.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\aceyducey.c
+
+$(BINDIR)\amazing.exe: $(SRCDIR)\amazing.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\amazing.c
+
+$(BINDIR)\animal.exe: $(SRCDIR)\animal.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\animal.c
+
+$(BINDIR)\awari.exe: $(SRCDIR)\awari.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\awari.c
+
+$(BINDIR)\bagels.exe: $(SRCDIR)\bagels.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\bagels.c
+
+$(BINDIR)\banner.exe: $(SRCDIR)\banner.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\banner.c
+
+$(BINDIR)\basketball.exe: $(SRCDIR)\basketball.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\basketball.c
+
+$(BINDIR)\batnum.exe: $(SRCDIR)\batnum.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\batnum.c
+
+$(BINDIR)\battle.exe: $(SRCDIR)\battle.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\battle.c
+
+$(BINDIR)\blackjack.exe: $(SRCDIR)\blackjack.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\blackjack.c
+
+$(BINDIR)\bombardment.exe: $(SRCDIR)\bombardment.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\bombardment.c
+
+$(BINDIR)\bombsaway.exe: $(SRCDIR)\bombsaway.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\bombsaway.c
+
+$(BINDIR)\bounce.exe: $(SRCDIR)\bounce.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\bounce.c
+
+$(BINDIR)\bowling.exe: $(SRCDIR)\bowling.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\bowling.c
+
+$(BINDIR)\boxing.exe: $(SRCDIR)\boxing.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\boxing.c
+
+$(BINDIR)\bug.exe: $(SRCDIR)\bug.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\bug.c
+
+$(BINDIR)\bullfight.exe: $(SRCDIR)\bullfight.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\bullfight.c
+
+$(BINDIR)\bullseye.exe: $(SRCDIR)\bullseye.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\bullseye.c
+
+$(BINDIR)\bunny.exe: $(SRCDIR)\bunny.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\bunny.c
+
+$(BINDIR)\buzzword.exe: $(SRCDIR)\buzzword.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\buzzword.c
+
+$(BINDIR)\calendar.exe: $(SRCDIR)\calendar.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\calendar.c
+
+$(BINDIR)\change.exe: $(SRCDIR)\change.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\change.c
+
+$(BINDIR)\checkers.exe: $(SRCDIR)\checkers.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\checkers.c
+
+$(BINDIR)\chemist.exe: $(SRCDIR)\chemist.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\chemist.c
+
+$(BINDIR)\chief.exe: $(SRCDIR)\chief.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\chief.c
+
+$(BINDIR)\chomp.exe: $(SRCDIR)\chomp.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\chomp.c
+
+$(BINDIR)\civilwar.exe: $(SRCDIR)\civilwar.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\civilwar.c
+
+$(BINDIR)\combat.exe: $(SRCDIR)\combat.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\combat.c
+
+$(BINDIR)\craps.exe: $(SRCDIR)\craps.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\craps.c
+
+$(BINDIR)\cube.exe: $(SRCDIR)\cube.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\cube.c
+
+$(BINDIR)\depthcharge.exe: $(SRCDIR)\depthcharge.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\depthcharge.c
+
+$(BINDIR)\diamond.exe: $(SRCDIR)\diamond.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\diamond.c
+
+$(BINDIR)\dice.exe: $(SRCDIR)\dice.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\dice.c
+
+$(BINDIR)\digits.exe: $(SRCDIR)\digits.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\digits.c
+
+$(BINDIR)\evenwins.exe: $(SRCDIR)\evenwins.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\evenwins.c
+
+$(BINDIR)\flipflop.exe: $(SRCDIR)\flipflop.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\flipflop.c
+
+$(BINDIR)\football.exe: $(SRCDIR)\football.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\football.c
+
+$(BINDIR)\ftball.exe: $(SRCDIR)\ftball.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\ftball.c
+
+$(BINDIR)\furtrader.exe: $(SRCDIR)\furtrader.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\furtrader.c
+
+$(BINDIR)\gameofevenwins.exe: $(SRCDIR)\gameofevenwins.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\gameofevenwins.c
+
+$(BINDIR)\golf.exe: $(SRCDIR)\golf.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\golf.c
+
+$(BINDIR)\gomoko.exe: $(SRCDIR)\gomoko.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\gomoko.c
+
+$(BINDIR)\guess.exe: $(SRCDIR)\guess.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\guess.c
+
+$(BINDIR)\gunner.exe: $(SRCDIR)\gunner.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\gunner.c
+
+$(BINDIR)\hammurabi.exe: $(SRCDIR)\hammurabi.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\hammurabi.c
+
+$(BINDIR)\hangman.exe: $(SRCDIR)\hangman.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\hangman.c
+
+$(BINDIR)\hello.exe: $(SRCDIR)\hello.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\hello.c
+
+$(BINDIR)\hexapawn.exe: $(SRCDIR)\hexapawn.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\hexapawn.c
+
+$(BINDIR)\hi-lo.exe: $(SRCDIR)\hi-lo.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\hi-lo.c
+
+$(BINDIR)\highiq.exe: $(SRCDIR)\highiq.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\highiq.c
+
+$(BINDIR)\hockey.exe: $(SRCDIR)\hockey.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\hockey.c
+
+$(BINDIR)\horserace.exe: $(SRCDIR)\horserace.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\horserace.c
+
+$(BINDIR)\hurkle.exe: $(SRCDIR)\hurkle.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\hurkle.c
+
+$(BINDIR)\kinema.exe: $(SRCDIR)\kinema.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\kinema.c
+
+$(BINDIR)\king.exe: $(SRCDIR)\king.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\king.c
+
+$(BINDIR)\lem.exe: $(SRCDIR)\lem.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\lem.c
+
+$(BINDIR)\letter.exe: $(SRCDIR)\letter.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\letter.c
+
+$(BINDIR)\life.exe: $(SRCDIR)\life.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\life.c
+
+$(BINDIR)\lifefortwo.exe: $(SRCDIR)\lifefortwo.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\lifefortwo.c
+
+$(BINDIR)\litquiz.exe: $(SRCDIR)\litquiz.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\litquiz.c
+
+$(BINDIR)\love.exe: $(SRCDIR)\love.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\love.c
+
+$(BINDIR)\lunar.exe: $(SRCDIR)\lunar.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\lunar.c
+
+$(BINDIR)\mastermind.exe: $(SRCDIR)\mastermind.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\mastermind.c
+
+$(BINDIR)\mathdice.exe: $(SRCDIR)\mathdice.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\mathdice.c
+
+$(BINDIR)\mine.exe: $(SRCDIR)\mine.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\mine.c
+
+$(BINDIR)\mugwump.exe: $(SRCDIR)\mugwump.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\mugwump.c
+
+$(BINDIR)\name.exe: $(SRCDIR)\name.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\name.c
+
+$(BINDIR)\nicomachus.exe: $(SRCDIR)\nicomachus.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\nicomachus.c
+
+$(BINDIR)\nim.exe: $(SRCDIR)\nim.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\nim.c
+
+$(BINDIR)\number.exe: $(SRCDIR)\number.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\number.c
+
+$(BINDIR)\onecheck.exe: $(SRCDIR)\onecheck.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\onecheck.c
+
+$(BINDIR)\orbit.exe: $(SRCDIR)\orbit.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\orbit.c
+
+$(BINDIR)\pizza.exe: $(SRCDIR)\pizza.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\pizza.c
+
+$(BINDIR)\poetry.exe: $(SRCDIR)\poetry.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\poetry.c
+
+$(BINDIR)\poker.exe: $(SRCDIR)\poker.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\poker.c
+
+$(BINDIR)\qubit.exe: $(SRCDIR)\qubit.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\qubit.c
+
+$(BINDIR)\queen.exe: $(SRCDIR)\queen.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\queen.c
+
+$(BINDIR)\reverse.exe: $(SRCDIR)\reverse.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\reverse.c
+
+$(BINDIR)\rocket.exe: $(SRCDIR)\rocket.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\rocket.c
+
+$(BINDIR)\rockscissors.exe: $(SRCDIR)\rockscissors.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\rockscissors.c
+
+$(BINDIR)\roulette.exe: $(SRCDIR)\roulette.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\roulette.c
+
+$(BINDIR)\russianroulette.exe: $(SRCDIR)\russianroulette.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\russianroulette.c
+
+$(BINDIR)\salvo.exe: $(SRCDIR)\salvo.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\salvo.c
+
+$(BINDIR)\sinewave.exe: $(SRCDIR)\sinewave.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\sinewave.c
+
+$(BINDIR)\slalom.exe: $(SRCDIR)\slalom.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\slalom.c
+
+$(BINDIR)\slots.exe: $(SRCDIR)\slots.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\slots.c
+
+$(BINDIR)\splat.exe: $(SRCDIR)\splat.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\splat.c
+
+$(BINDIR)\stars.exe: $(SRCDIR)\stars.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\stars.c
+
+$(BINDIR)\stockmarket.exe: $(SRCDIR)\stockmarket.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\stockmarket.c
+
+$(BINDIR)\suite.exe: $(SRCDIR)\suite.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\suite.c
+
+$(BINDIR)\superstartrek.exe: $(SRCDIR)\superstartrek.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\superstartrek.c
+
+$(BINDIR)\superstartrekins.exe: $(SRCDIR)\superstartrekins.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\superstartrekins.c
+
+$(BINDIR)\synonym.exe: $(SRCDIR)\synonym.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\synonym.c
+
+$(BINDIR)\target.exe: $(SRCDIR)\target.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\target.c
+
+$(BINDIR)\test.exe: $(SRCDIR)\test.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\test.c
+
+$(BINDIR)\tictactoe1.exe: $(SRCDIR)\tictactoe1.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\tictactoe1.c
+
+$(BINDIR)\tictactoe2.exe: $(SRCDIR)\tictactoe2.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\tictactoe2.c
+
+$(BINDIR)\tower.exe: $(SRCDIR)\tower.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\tower.c
+
+$(BINDIR)\train.exe: $(SRCDIR)\train.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\train.c
+
+$(BINDIR)\trap.exe: $(SRCDIR)\trap.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\trap.c
+
+$(BINDIR)\war.exe: $(SRCDIR)\war.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\war.c
+
+$(BINDIR)\weekday.exe: $(SRCDIR)\weekday.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\weekday.c
+
+$(BINDIR)\word.exe: $(SRCDIR)\word.c
+	$(CC) $(CFLAGS) /Fo$(BINDIR)\ /Fe$@ $(SRCDIR)\word.c
+
+clean:
+	if exist $(BINDIR) rmdir /S /Q $(BINDIR)

@@ -1,0 +1,3 @@
+@echo off
+echo Building with Open Watcom for FreeDOS...
+wmake -f Makefile.watcom

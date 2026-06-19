@@ -1,0 +1,3 @@
+@echo off
+echo Building with MSVC for Windows 11...
+nmake /f Makefile.msvc
