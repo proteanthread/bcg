@@ -1,4 +1,4 @@
-# BASIC Computer Games - C89 Port
+# David Ahl's BASIC Computer Games - C89 Port
 
 This repository contains a C89 (ANSI C) port of the classic GW-BASIC games from **David Ahl's "BASIC Computer Games"** and **"More BASIC Computer Games"** originally published by Creative Computing.
 
