@@ -1,8 +1,17 @@
-# David Ahl's BASIC Computer Games - C89 Port
+# David Ahl's BASIC Computer Games
 
-This repository contains a C89 (ANSI C) port of the classic GW-BASIC games from **David Ahl's "BASIC Computer Games"** and **"More BASIC Computer Games"** originally published by Creative Computing.
+## These haven't been tested, validated, debugged, or verified!
+### Use at your own risk:
 
-The original games were written in BASIC and have been ported over to strictly compliant C89, ensuring they compile and run on a variety of platforms including Linux (GCC), Windows (MSVC), and FreeDOS (Open Watcom).
+* Yes, I used Google Anti-Gravity to convert the programs from GW-BASIC to 'C', but what a better learning tool than to debug a program?
+
+* This repository contains a 'C' port of the classic GW-BASIC games from **David Ahl's "BASIC Computer Games"** and **"More BASIC Computer Games"** originally published by Creative Computing.
+
+* The original games were written in GW-BASIC and have been ported over to 'C', ensuring they compile and run on a variety of platforms including Linux (GCC), Windows (MSVC), and FreeDOS (Open Watcom).
+
+* When I get time, I will finish this project, otherwise fork it and finish it yourself.
+
+* Make sure CAPS LOCK IS ON!
 
 ## Background & History
 
