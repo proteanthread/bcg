@@ -11,6 +11,8 @@
 
 * When I get time, I will finish this project, otherwise fork it and finish it yourself.
 
+* Make sure CAPS LOCK IS ON!
+
 ## Background & History
 
 * [BASIC Computer Games on Archive.org](https://archive.org/details/ahl-1978-basic-computer-games)
