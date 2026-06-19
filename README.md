@@ -7,7 +7,7 @@
 
 * This repository contains a 'C' port of the classic GW-BASIC games from **David Ahl's "BASIC Computer Games"** and **"More BASIC Computer Games"** originally published by Creative Computing.
 
-* The original games were written in GW-BASIC and have been ported over to strictly compliant 'C', ensuring they compile and run on a variety of platforms including Linux (GCC), Windows (MSVC), and FreeDOS (Open Watcom).
+* The original games were written in GW-BASIC and have been ported over to 'C', ensuring they compile and run on a variety of platforms including Linux (GCC), Windows (MSVC), and FreeDOS (Open Watcom).
 
 * When I get time, I will finish this project, otherwise fork it and finish it yourself.
 
