@@ -1,4 +1,4 @@
-# David Ahl's BASIC Computer Games - C89 Port
+# David Ahl's BASIC Computer Games
 
 ## These haven't been tested, validated, debugged, or verified!
 ### Use at your own risk:
