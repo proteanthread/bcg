@@ -1,8 +1,8 @@
 CC = gcc
-CFLAGS = -std=c89 -pedantic -Wall -I.
+CFLAGS = -std=c17 -pedantic -Wall -Wno-unused-label -I.
 LDFLAGS = -lm
 SRCDIR = SOURCE
-BINDIR = bin_linux
+BINDIR = BINARY
 
 TARGETS = $(BINDIR)/23matches $(BINDIR)/3dplot $(BINDIR)/aceyducey $(BINDIR)/amazing $(BINDIR)/animal $(BINDIR)/awari $(BINDIR)/bagels $(BINDIR)/banner $(BINDIR)/basketball $(BINDIR)/batnum $(BINDIR)/battle $(BINDIR)/blackjack $(BINDIR)/bombardment $(BINDIR)/bombsaway $(BINDIR)/bounce $(BINDIR)/bowling $(BINDIR)/boxing $(BINDIR)/bug $(BINDIR)/bullfight $(BINDIR)/bullseye $(BINDIR)/bunny $(BINDIR)/buzzword $(BINDIR)/calendar $(BINDIR)/change $(BINDIR)/checkers $(BINDIR)/chemist $(BINDIR)/chief $(BINDIR)/chomp $(BINDIR)/civilwar $(BINDIR)/combat $(BINDIR)/craps $(BINDIR)/cube $(BINDIR)/depthcharge $(BINDIR)/diamond $(BINDIR)/dice $(BINDIR)/digits $(BINDIR)/evenwins $(BINDIR)/flipflop $(BINDIR)/football $(BINDIR)/ftball $(BINDIR)/furtrader $(BINDIR)/gameofevenwins $(BINDIR)/golf $(BINDIR)/gomoko $(BINDIR)/guess $(BINDIR)/gunner $(BINDIR)/hammurabi $(BINDIR)/hangman $(BINDIR)/hello $(BINDIR)/hexapawn $(BINDIR)/hi-lo $(BINDIR)/highiq $(BINDIR)/hockey $(BINDIR)/horserace $(BINDIR)/hurkle $(BINDIR)/kinema $(BINDIR)/king $(BINDIR)/lem $(BINDIR)/letter $(BINDIR)/life $(BINDIR)/lifefortwo $(BINDIR)/litquiz $(BINDIR)/love $(BINDIR)/lunar $(BINDIR)/mastermind $(BINDIR)/mathdice $(BINDIR)/mine $(BINDIR)/mugwump $(BINDIR)/name $(BINDIR)/nicomachus $(BINDIR)/nim $(BINDIR)/number $(BINDIR)/onecheck $(BINDIR)/orbit $(BINDIR)/pizza $(BINDIR)/poetry $(BINDIR)/poker $(BINDIR)/qubit $(BINDIR)/queen $(BINDIR)/reverse $(BINDIR)/rocket $(BINDIR)/rockscissors $(BINDIR)/roulette $(BINDIR)/russianroulette $(BINDIR)/salvo $(BINDIR)/sinewave $(BINDIR)/slalom $(BINDIR)/slots $(BINDIR)/splat $(BINDIR)/stars $(BINDIR)/stockmarket $(BINDIR)/suite $(BINDIR)/superstartrek $(BINDIR)/superstartrekins $(BINDIR)/synonym $(BINDIR)/target $(BINDIR)/test $(BINDIR)/tictactoe1 $(BINDIR)/tictactoe2 $(BINDIR)/tower $(BINDIR)/train $(BINDIR)/trap $(BINDIR)/war $(BINDIR)/weekday $(BINDIR)/word
 

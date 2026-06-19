@@ -1,6 +1,6 @@
 /*
  * Transpiled from suite.bas
- * GW-BASIC to strict C89 (ANSI)
+ * GW-BASIC to strict C17
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,11 +8,95 @@
 #include <math.h>
 #include <time.h>
 
+/* Static library helpers */
+static double basic_SGN(double x) { return (x > 0.0) - (x < 0.0); }
+static double basic_LEN(const char *s) { return (double)strlen(s); }
+static double basic_ASC(const char *s) { return s[0] ? (double)((unsigned char)s[0]) : 0.0; }
+static double basic_VAL(const char *s) { return atof(s); }
+
+static const char *basic_CHR(double n) {
+    static char buf[4][2];
+    static int idx = 0;
+    idx = (idx + 1) % 4;
+    buf[idx][0] = (char)n;
+    buf[idx][1] = '\0';
+    return buf[idx];
+}
+
+static const char *basic_STR(double n) {
+    static char buf[4][64];
+    static int idx = 0;
+    idx = (idx + 1) % 4;
+    if (n >= 0) snprintf(buf[idx], sizeof(buf[idx]), " %g", n);
+    else snprintf(buf[idx], sizeof(buf[idx]), "%g", n);
+    return buf[idx];
+}
+
+static const char *basic_LEFT(const char *s, double n) {
+    static char buf[4][256];
+    static int idx = 0;
+    int len = (int)n;
+    idx = (idx + 1) % 4;
+    if (len < 0) len = 0;
+    if (len > 255) len = 255;
+    strncpy(buf[idx], s, len);
+    buf[idx][len] = '\0';
+    return buf[idx];
+}
+
+static const char *basic_RIGHT(const char *s, double n) {
+    static char buf[4][256];
+    static int idx = 0;
+    int len = (int)n;
+    int s_len = (int)strlen(s);
+    idx = (idx + 1) % 4;
+    if (len < 0) len = 0;
+    if (len > s_len) len = s_len;
+    if (len > 255) len = 255;
+    strncpy(buf[idx], s + s_len - len, len);
+    buf[idx][len] = '\0';
+    return buf[idx];
+}
+
+static const char *basic_MID(const char *s, double start_d, double len_d) {
+    static char buf[4][256];
+    static int idx = 0;
+    int start = (int)start_d - 1;
+    int len = (int)len_d;
+    int s_len = (int)strlen(s);
+    idx = (idx + 1) % 4;
+    if (start < 0) start = 0;
+    if (start > s_len) start = s_len;
+    if (len < 0) len = 0;
+    if (len > 255) len = 255;
+    strncpy(buf[idx], s + start, len);
+    buf[idx][len] = '\0';
+    return buf[idx];
+}
+
+static const char *str_cat_helper(const char *s1, const char *s2) {
+    static char buf[4][512];
+    static int idx = 0;
+    idx = (idx + 1) % 4;
+    snprintf(buf[idx], sizeof(buf[idx]), "%s%s", s1, s2);
+    return buf[idx];
+}
+
+static void str_assign(char *dest, size_t dest_sz, const char *src) {
+    strncpy(dest, src, dest_sz - 1);
+    dest[dest_sz - 1] = '\0';
+}
+
+/* Global variables */
+static double CASE, ENDIF, ENDSEL, OTHER, SELECT;
+static char _input_buf[256];
+
 int main(int argc, char **argv) {
-    /* Variable declarations */
-    double ORANGE, BARK, AZURE, YELLOW, ELSE, POINT, IS, FORK, CAMPING, ENDIF, BITE, MAPS, TWO, BROWN, ITS, SOMETHING, HELP, YEP, SELECT, BLUE, SMACK, DON, ADDER, MARK, STEELHEAD, BAT, A, PAPS, SPOON, WHAT, HOWSIT, FUCIA, THREE, NO, YOURS, WHOOPS, WILD, HI, CASE, LO, FLARK, ONE, IT, OTHER, THAT, YES, AFTER, KNIFE, WHY, WHO, KNOW, T, ENDSEL, WHATCHACALLIT, LAST, WHAPPS, THIS, ZARK, MINE, CARP;
-    char _input_buf[256];
     srand((unsigned int)time(NULL));
+
+    (void)argc;
+    (void)argv;
+    (void)_input_buf;
 
 
     return 0;
